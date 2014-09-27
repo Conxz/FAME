@@ -11,7 +11,7 @@ Installation
 Usage
 -----
 
-	usage: calc_featheadmotion [-h] -sd sess-dir -sf sess-file -exp exp-name -rlf
+	usage: fame [-h] -sd sess-dir -sf sess-file -exp exp-name -rlf
                            runlist-file -feat feat-dir -thr thr thr -o output
                            [--log log-file] [-v]
 
