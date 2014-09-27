@@ -2,28 +2,6 @@
 # emacs: -*- mode: python; py-indent-offset: 4; indent-tabs-mode: nil -*-
 # vi: set ft=python sts=4 ts=4 sw=4 et:
 
-"""This is a pythonic cmd-line for getting head motion from feat.
-
-    usage: calc_featheadmotion [-h] -sd sess-dir -sf sess-file -exp exp-name -rlf
-    runlist-file -feat feat-dir -thr thr thr -o output
-    [--log log-file] [-v]
-    
-    A cmd-line for getting head motion.
-    
-    optional arguments:
-        -h, --help         show this help message and exit
-        -sd sess-dir       The sessdir.
-        -sf sess-file      The sess list file.
-        -exp exp-name      The exp name.
-        -rlf runlist-file  The run list file.
-        -feat feat-dir     The feat dir.
-        -thr thr thr       The thresh for motion, absthr relthr.
-        -o output          The output file.
-        --log log-file     log name for the processing.
-        -v                 show program's version number and exit
-    
-"""
-
 import argparse
 import numpy as np
 #import scipy.io as sio
@@ -35,8 +13,7 @@ from fame.base import nkpi_logger
 
 def main():
     parser = argparse.ArgumentParser(
-            description = 'A cmd-line for getting head motion.',
-            prog = 'calc_featheadmotion')
+            description = 'A cmd-line for getting head motion.')
     
     parser.add_argument('-sd',
                         dest = 'sessdir',
